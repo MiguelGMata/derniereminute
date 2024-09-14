@@ -1,0 +1,174 @@
+:root {
+    --fuchsia: #ef5a8d;
+    --button-bg: white;
+    --button-size: 60px;
+  }
+
+
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--fuchsia);
+    padding: 1rem;
+    color: white;
+    position: relative;
+    z-index: 20; /* Asegura que el navbar y el logo estén por encima del menú */
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 50px;
+    border-radius: 10px;
+  }
+  
+  .navbar-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+  }
+  
+  .navbar-menu li {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .navbar-menu li span {
+    margin-left: 0.5rem;
+  }
+  
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 30; /* Asegura que el botón de la X siempre esté encima del menú */
+  }
+  
+  .menu-icon {
+    font-size: 2rem;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .navbar-menu {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: var(--fuchsia);
+      height: 100vh;
+      width: 15%;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10; /* Asegura que el menú se mantenga detrás del botón de cierre */
+    }
+  
+    .navbar-menu.open {
+      transform: translateX(0);
+    }
+  
+    .navbar-menu ul {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      height: 100%;
+    }
+  
+    .navbar-menu li {
+      font-size: 1.5rem;
+    }
+  
+    .navbar-menu li span {
+      display: none;
+    }
+  
+    .menu-toggle {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+    }
+  
+    .menu-toggle .menu-icon {
+      font-size: 2.5rem;
+      z-index: 30; /* Asegura que el botón de la X sea visible sobre el menú */
+    }
+  
+    /* Estilos de los íconos como botones */
+    .navbar-menu li {
+      width: var(--button-size);
+      height: var(--button-size);
+      background-color: var(--button-bg);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.3s;
+    }
+  
+    .navbar-menu li:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  
+    .navbar-menu li svg {
+      font-size: 2rem; /* Tamaño del ícono */
+      color: var(--fuchsia); /* Color del ícono */
+    }
+  }
+  
+  /* Desktop Styles */
+  @media (min-width: 769px) {
+    .navbar-menu {
+      position: static;
+      height: auto;
+      transform: none;
+      display: flex;
+
+    }
+  
+    .navbar-menu ul {
+      flex-direction: row;
+    }
+  
+    .menu-toggle {
+      display: none;
+    }
+  
+    .navbar-menu li span {
+      display: inline;
+      font-size: 1.5rem;
+    }
+
+    .navbar-menu li svg {
+        font-size: 1.5rem;
+    }
+    .navbar-menu li {
+        background-color: #ea0654;
+        padding: 0.5rem;
+        border: solid 1px #ffff;
+        border-radius: 20px;
+    }
+    .navbar-menu li:hover {
+        background-color: #fff;
+        color: #ea0654;
+        transform:scale(1.1);
+        transition: all 0.5s;
+      
+    }
+
+    .navbar-logo {
+        width: 100px;
+      }
+}
+
+  
