@@ -1,11 +1,16 @@
 import React from 'react';
-import './offertsScreen.css';
 import CardOffert from '../../molecules/cardofert/CardOffert'; 
+import HeaderMultiple from '../../organisms/header/HeaderMultiple';
+import './offertsScreen.css';
+import Search from '../../molecules/search/Search';
+
 
 const OffertsScreen = () => {
   return (
     <>
+    <HeaderMultiple/>
       <main className="OffertScreen">
+
         <section className="OffertScreen-section">
           <h1 className="OffertScreen-heading">Nos Offres Exceptionnelles</h1>
           <p className="OffertScreen-description">
