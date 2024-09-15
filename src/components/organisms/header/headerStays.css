@@ -1,0 +1,47 @@
+.header-stays {
+    position: relative;
+    height: 50vh; /* Hace que el header ocupe toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  .header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para asegurarse que el video cubra todo el área */
+    z-index: -1; /* Para que el video esté detrás del contenido */
+  }
+  
+  .header-stays-content {
+    z-index: 1;
+    padding: 20px;
+    max-width: 1200px;
+  }
+  
+  .header-stays h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .header-stays p {
+    font-size: 1rem;
+  }
+  
+  /* Estilos mobile-first */
+  @media (min-width: 768px) {
+    .header-stays h1 {
+      font-size: 3rem;
+    }
+  
+    .header-stays p {
+      font-size: 1.5rem;
+    }
+  }
+  

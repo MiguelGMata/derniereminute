@@ -17,6 +17,7 @@ const CardDestinations = () => {
         <div key={destination.id} className="destination-card">
           <img src={destination.imageUrl} alt={destination.title} className="destination-image" />
           <div className="destination-title">{destination.title}</div>
+          <div className="destination-btn">Découvrir</div>
         </div>
       ))}
     </div>

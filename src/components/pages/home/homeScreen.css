@@ -7,16 +7,16 @@
   margin: 0;
 }
 .homeScreen-h1{
-  font-size: 1.5rem;
+  font-size: 2.5em;
   text-align: center;
 }
 .homeScreen-span{
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #ef5a8d;
 } 
 .homeScreen-p{
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 0 4rem;
 }
   
