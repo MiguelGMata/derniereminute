@@ -41,6 +41,8 @@
   cursor: pointer;
   padding: 10px;
   z-index: 10;
+  width: 30px;
+  height: 30px;
 }
 
 .carousel-button.prev {
