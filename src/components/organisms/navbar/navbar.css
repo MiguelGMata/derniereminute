@@ -3,15 +3,13 @@
     --button-bg: white;
     --button-size: 60px;
   }
-
-
-  
+ 
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--fuchsia);
-    padding: 1rem;
+    padding: 0.5rem;
     color: white;
     position: relative;
     z-index: 20; /* Asegura que el navbar y el logo estén por encima del menú */
@@ -20,8 +18,9 @@
   .navbar-logo {
     font-size: 1.5rem;
     font-weight: bold;
+    height: 50px;
     width: 50px;
-    border-radius: 10px;
+    background-color: #fff;
   }
   
   .navbar-menu ul {
@@ -54,7 +53,7 @@
     color: white;
     transition: transform 0.3s ease-in-out;
   }
-  
+
   /* Mobile Styles */
   @media (max-width: 768px) {
     .navbar-menu {
@@ -95,7 +94,6 @@
     .menu-toggle {
       display: block;
       position: absolute;
-      top: 1rem;
       right: 1.5rem;
     }
   
@@ -153,7 +151,6 @@
         font-size: 1.5rem;
     }
     .navbar-menu li {
-        background-color: #ea0654;
         padding: 0.5rem;
         border: solid 1px #ffff;
         border-radius: 20px;
@@ -161,14 +158,16 @@
     .navbar-menu li:hover {
         background-color: #fff;
         color: #ea0654;
-        transform:scale(1.1);
         transition: all 0.5s;
-      
     }
-
     .navbar-logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        height: 100px;
         width: 100px;
+        background-color: #fff;
       }
+      
 }
 
   
