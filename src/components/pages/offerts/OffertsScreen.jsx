@@ -1,5 +1,5 @@
 import React from 'react';
-import './OffertsScreen.css';
+import './offertsScreen.css';
 import CardOffert from '../../molecules/cardofert/CardOffert'; 
 
 const OffertsScreen = () => {
