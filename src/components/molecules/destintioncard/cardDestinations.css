@@ -1,0 +1,47 @@
+/* Diseño base para mobile-first */
+.card-destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+    margin: 0 auto; /* Centra la Grid */
+    cursor: pointer;
+  }
+  
+  .destination-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .destination-image {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .destination-title {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+  }
+  
+  /* Efecto de zoom al pasar el ratón */
+  .destination-card:hover .destination-image {
+    transform: scale(1.1);
+  }
+  
+  /* Adaptación para pantallas más grandes (desktop) */
+  @media (min-width: 768px) {
+    .card-destinations-grid {
+      grid-template-columns: repeat(3, 1fr);
+      width: 50%;
+      gap: 20px;
+    }
+  }
+  
