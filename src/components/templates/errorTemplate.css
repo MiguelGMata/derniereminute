@@ -4,7 +4,7 @@
   min-height: 100vh;
   background-image: url(https://1wpserveur-1278.kxcdn.com/wp-content/uploads/2023/07/13315300_5203299.jpg);
   background-repeat: no-repeat;
-  background-size: 30%;
+  background-size: 100%;
   background-position: center;
 }
 
@@ -39,4 +39,9 @@
 .error-content a:hover {
   background-color: #007bff;
   color: white;
+}
+@media(min-width:768px) {
+  .error-template {
+    background-size: 30%;
+  }
 }

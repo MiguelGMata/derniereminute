@@ -40,7 +40,7 @@
   @media (min-width: 768px) {
     .card-destinations-grid {
       grid-template-columns: repeat(3, 1fr);
-      width: 50%;
+      width: 80%;
       gap: 20px;
     }
   }

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { FaHome, FaPlane, FaUmbrellaBeach, FaMapMarkedAlt, FaTags, FaMapPin } from 'react-icons/fa';
+import { FaHome, FaPlane, FaUmbrellaBeach, FaTags, FaMapPin } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import Image from '../../../assets/images/logo.png';
+
 import './navbar.css';
 
 const Navbar = () => {
@@ -18,44 +20,52 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <img src={Image} className="navbar-logo" alt="Logo"></img>
+      <Link to={"/"} className='navbar-link'>
+        <img src={Image} className="navbar-logo" alt="Logo"></img>
+      </Link>
+
       <div className={`navbar-menu ${menuOpen ? 'open' : ''}`}>
         <ul>
+
           <li 
             className={activeItem === 'Accueil' ? 'active' : ''} 
             onClick={() => handleMenuItemClick('Accueil')}
           >
-            <FaHome /> <span>Accueil</span>
+            <Link to={"/"} className='navbar-link'>
+              <FaHome /> <span>Accueil</span>
+            </Link>
           </li>
           <li 
             className={activeItem === 'Séjours' ? 'active' : ''} 
             onClick={() => handleMenuItemClick('Séjours')}
           >
-            <FaPlane /> <span>Séjours</span>
+            <Link to={"/sejours"} className='navbar-link'>
+              <FaPlane /> <span>Séjours</span>
+            </Link>
           </li>
           <li 
             className={activeItem === 'Clubs' ? 'active' : ''} 
             onClick={() => handleMenuItemClick('Clubs')}
           >
-            <FaUmbrellaBeach /> <span>Clubs</span>
-          </li>
-          <li 
-            className={activeItem === 'Circuits' ? 'active' : ''} 
-            onClick={() => handleMenuItemClick('Circuits')}
-          >
-            <FaMapMarkedAlt /> <span>Circuits</span>
+            <Link to={"/clubs"} className='navbar-link'>
+              <FaUmbrellaBeach /> <span>Clubs</span>
+            </Link>
           </li>
           <li 
             className={activeItem === 'Bons Plans' ? 'active' : ''} 
             onClick={() => handleMenuItemClick('Bons Plans')}
           >
-            <FaTags /> <span>Bons Plans</span>
+            <Link to={"/bons-plans"} className='navbar-link'>
+              <FaTags /> <span>Bons Plans</span>
+            </Link>
           </li>
           <li 
             className={activeItem === 'Destinations' ? 'active' : ''} 
             onClick={() => handleMenuItemClick('Destinations')}
           >
-            <FaMapPin /> <span>Destinations</span>
+            <Link to={"/destinations"} className='navbar-link'>
+              <FaMapPin /> <span>Destinations</span>
+            </Link>
           </li>
         </ul>
       </div>

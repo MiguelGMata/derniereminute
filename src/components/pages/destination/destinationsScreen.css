@@ -1,0 +1,38 @@
+/* Estilo general para el contenedor principal de la pantalla de ofertas */
+.DestinationScreen {
+    padding: 20px;
+    background-color: #f4f4f4; 
+    min-height: 100vh; 
+  }
+  
+  /* Estilo para la sección dentro del contenedor principal */
+  .DestinationScreen-section {
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para el encabezado principal */
+  .DestinationScreen-heading {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #333; 
+    text-align: center; 
+  }
+  
+  /* Estilo para la descripción */
+  .DestinationScreen-description {
+    font-size: 1.2em; 
+    margin-bottom: 30px;
+    color: #666; 
+    text-align: center; 
+  }
+  
+ 
+  /* Estilo responsivo para pantallas pequeñas */
+  @media (min-width: 768px) {
+
+  }
+  

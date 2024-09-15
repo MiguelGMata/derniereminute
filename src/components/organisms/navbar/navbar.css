@@ -29,6 +29,7 @@
     display: flex;
     gap: 2rem;
     padding: 0;
+    text-decoration: none;
   }
   
   .navbar-menu li {
@@ -37,7 +38,12 @@
     font-size: 1.2rem;
     cursor: pointer;
   }
-
+  .navbar-link {
+    text-decoration: none; 
+    color: inherit; /* Mantiene el color del texto */
+    display: flex;
+    align-items: center;
+  }
   .navbar-menu li span {
     margin-left: 0.5rem;
   }
