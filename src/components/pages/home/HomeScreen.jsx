@@ -1,11 +1,12 @@
 import React from 'react';
+import Header from '../../organisms/header/Header';
 import './homeScreen.css';
 
 
 const HomeScreen = () =>{
     return(
         <main>
-            <h1>Home</h1>
+            <Header/>
         </main>
     )
 }
