@@ -7,7 +7,7 @@ import { format } from 'date-fns'; // Importa la función de formato
 import './Search.css';
 
 const Search = () => {
-  const [location, setLocation] = useState('Sélectionnez un lieu');
+  const [location, setLocation] = useState('Lieu');
   const [showLocationMenu, setShowLocationMenu] = useState(false);
   const [date, setDate] = useState(null);
   const [nights, setNights] = useState('0 à 5 nuits');
@@ -74,7 +74,7 @@ const Search = () => {
       </div>
       <div className="search-item" onClick={handleDateClick} ref={datePickerRef}>
         <FaCalendarAlt className="search-icon" />
-        <span>{date ? format(date, 'dd MMMM yyyy', { locale: fr }) : 'Sélectionnez une date'}</span>
+        <span>{date ? format(date, 'dd MM yyyy', { locale: fr }) : 'Date'}</span>
         {showDatePicker && (
           <div className="date-picker-container">
             <DatePicker
