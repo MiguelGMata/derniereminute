@@ -110,4 +110,7 @@
   .search-response{
     display: none;
   }
+  .search-dropdown {
+    width: 150px;
+  }
 }

@@ -1,7 +1,7 @@
 :root {
     --fuchsia: #ef5a8d;
     --button-bg: white;
-    --button-size: 60px;
+    --button-size: 50px;
   }
  
   .navbar {
@@ -163,7 +163,7 @@
     }
     .navbar-menu li {
         padding: 0.5rem 1rem;
-        border: solid 1px #ffff;
+        border: solid 1px #fff;
         border-radius: 20px;
         background-color: rgba(0, 0, 0, 0.1);
         text-align: center;
