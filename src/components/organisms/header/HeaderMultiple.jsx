@@ -1,12 +1,11 @@
 import React from 'react';
-import Search from '../../molecules/search/Search';
 import './headerMultiple.css';
 
 const HeaderMultiple = () => {
   return (
     <header className="header-offers">
       <div className="header-offers-text">
-        <Search/>
+    
       </div>
       <div className="header-offers-images">
         <img src="https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/mallorca-1.png?updatedAt=1726395884335" alt="Majorque" />

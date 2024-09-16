@@ -7,7 +7,7 @@
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 10px auto;
   }
   
   .search-item {
@@ -94,3 +94,9 @@
     background-color: #d94877;
   }
   
+  .search-hotels-list{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+  }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaArrowLeft, FaArrowRight, FaStar, FaMapMarkerAlt } from 'react-icons/fa';
-import {Data}from './Data';
+import { Data } from './Data';
 import './cardOffert.css';
 
 const CardOffert = () => {
