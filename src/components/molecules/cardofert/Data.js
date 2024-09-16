@@ -62,6 +62,6 @@
         stars: 3,
         description: 'Boutique hôtel en bord de mer avec vue magnifique, ambiance paisible',
         price: '120€ / nuit',
-        location: 'San Juan, Puerto Rico'
+        location: 'San Juan, Porto Rico'
       },
   ];
