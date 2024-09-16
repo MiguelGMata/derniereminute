@@ -16,7 +16,7 @@ export const Data = [
         {
           id: 2,
           name: 'Astarte Suites',
-          location: 'Santorini, Grèce',
+          location: 'Santorin, Grèce',
           stars: 5,
           price: 180,
           features: [
@@ -58,7 +58,7 @@ export const Data = [
         {
           id: 5,
           name: 'Hôtel Tres Sirenas Beach',
-          location: 'San Juan, Puerto Rico',
+          location: 'San Juan, Porto Rico',
           stars: 3,
           price: 120,
           features: [

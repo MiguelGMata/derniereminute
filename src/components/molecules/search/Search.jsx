@@ -80,12 +80,12 @@ const Search = () => {
           <span>{location}</span>
           {showLocationMenu && (
             <div className="search-dropdown">
-              <button onClick={() => handleLocationSelect('Majorque')}>Majorque</button>
-              <button onClick={() => handleLocationSelect('Grèce')}>Grèce</button>
-              <button onClick={() => handleLocationSelect('Canaries')}>Canaries</button>
-              <button onClick={() => handleLocationSelect('Ibiza')}>Ibiza</button>
-              <button onClick={() => handleLocationSelect('Puerto Rico')}>Puerto Rico</button>
-              <button onClick={() => handleLocationSelect('Corse')}>Corse</button>
+              <button onClick={() => handleLocationSelect('Majorque, Espagne')}>Majorque</button>
+              <button onClick={() => handleLocationSelect('Santorin, Grèce')}>Santorin</button>
+              <button onClick={() => handleLocationSelect('Îles Canaries, Espagne')}>Îles Canaries</button>
+              <button onClick={() => handleLocationSelect('Ibiza, Espagne')}>Ibiza</button>
+              <button onClick={() => handleLocationSelect('San Juan, Porto Rico')}>Porto Rico</button>
+              <button onClick={() => handleLocationSelect('Corse, France')}>Corse</button>
             </div>
           )}
         </div>
