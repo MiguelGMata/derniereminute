@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaHome, FaPlane, FaUmbrellaBeach, FaTags, FaMapPin } from 'react-icons/fa';
+import { FaHome, FaHotel, FaUmbrellaBeach, FaTags, FaMapPin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Image from '../../../assets/images/logo.png';
 
@@ -40,7 +40,7 @@ const Navbar = () => {
             onClick={() => handleMenuItemClick('Séjours')}
           >
             <Link to={"/sejours"} className='navbar-link'>
-              <FaPlane /> <span>Séjours</span>
+              <FaHotel /> <span>Séjours</span>
             </Link>
           </li>
           <li 
