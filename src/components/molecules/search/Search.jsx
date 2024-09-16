@@ -4,8 +4,8 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { fr } from 'date-fns/locale'; // Localización en francés
 import { format } from 'date-fns'; // Formateo de fecha
-import HotelCard from './HotelCard';
-import { Data } from './Hotels';
+import HotelCard from '../hotelCard/HotelCard';
+import { Data } from '../hotelCard/Hotels';
 import './search.css';
 
 const hotels = Data;

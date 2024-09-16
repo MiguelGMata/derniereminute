@@ -1,6 +1,6 @@
 .header-stays {
     position: relative;
-    height: 50vh; /* Hace que el header ocupe toda la pantalla */
+    height: 30vh; /* Hace que el header ocupe toda la pantalla */
     display: flex;
     justify-content: center;
     align-items: center;

@@ -36,19 +36,11 @@ const Navbar = () => {
             </Link>
           </li>
           <li 
-            className={activeItem === 'Séjours' ? 'active' : ''} 
-            onClick={() => handleMenuItemClick('Séjours')}
+            className={activeItem === 'Destinations' ? 'active' : ''} 
+            onClick={() => handleMenuItemClick('Destinations')}
           >
-            <Link to={"/sejours"} className='navbar-link'>
-              <FaHotel /> <span>Séjours</span>
-            </Link>
-          </li>
-          <li 
-            className={activeItem === 'Clubs' ? 'active' : ''} 
-            onClick={() => handleMenuItemClick('Clubs')}
-          >
-            <Link to={"/clubs"} className='navbar-link'>
-              <FaUmbrellaBeach /> <span>Clubs</span>
+            <Link to={"/destinations"} className='navbar-link'>
+              <FaMapPin /> <span>Destinations</span>
             </Link>
           </li>
           <li 
@@ -60,11 +52,11 @@ const Navbar = () => {
             </Link>
           </li>
           <li 
-            className={activeItem === 'Destinations' ? 'active' : ''} 
-            onClick={() => handleMenuItemClick('Destinations')}
+            className={activeItem === 'Clubs' ? 'active' : ''} 
+            onClick={() => handleMenuItemClick('Clubs')}
           >
-            <Link to={"/destinations"} className='navbar-link'>
-              <FaMapPin /> <span>Destinations</span>
+            <Link to={"/clubs"} className='navbar-link'>
+              <FaUmbrellaBeach /> <span>Clubs</span>
             </Link>
           </li>
         </ul>
@@ -79,3 +71,14 @@ const Navbar = () => {
 export default Navbar;
 
 
+/**
+ * 
+ *       <li 
+            className={activeItem === 'Séjours' ? 'active' : ''} 
+            onClick={() => handleMenuItemClick('Séjours')}
+          >
+            <Link to={"/sejours"} className='navbar-link'>
+              <FaHotel /> <span>Séjours</span>
+            </Link>
+          </li>
+ */

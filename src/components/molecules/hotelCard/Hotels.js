@@ -12,6 +12,7 @@ export const Data = [
           ],
           image: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Majorque/hotel-majorque-1.webp?updatedAt=1726408453507',
           pension: 'Tout compris',
+          description: "Situé sur l'île ensoleillée de Majorque, le BQ Aguamarina Boutique offre une vue imprenable sur la mer Méditerranée. Cet hôtel charmant allie confort moderne et élégance traditionnelle pour une escapade parfaite au bord de l'eau.",
           images: [
             'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Majorque/hotel-majorque-1.webp?updatedAt=1726408453507',
             'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Majorque/hotel-majorque-5.webp?updatedAt=1726408716922',
@@ -34,6 +35,7 @@ export const Data = [
           ],
           image: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Santorini/hotel-santorini-2.jpg?updatedAt=1726410160703',
           pension: 'Tout compris',
+          description: "Perché sur les falaises emblématiques de Santorin, Astarte Suites propose un cadre romantique avec des vues à couper le souffle sur la caldeira. Profitez du luxe et de la tranquillité dans un décor paradisiaque.",
           images: [
             'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Santorini/hotel-santorini-1.jpg?updatedAt=1726410160692',
             'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Santorini/hotel-santorini-2.jpg?updatedAt=1726410160703',
@@ -56,6 +58,7 @@ export const Data = [
           ],
           image: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Canaries/hotel-canaries-2.webp?updatedAt=1726511279357',
           pension: 'Demi pension',
+          description: "Perché sur les falaises emblématiques de Santorin, Astarte Suites propose un cadre romantique avec des vues à couper le souffle sur la caldeira. Profitez du luxe et de la tranquillité dans un décor paradisiaque.",
           images: [
             'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Canaries/hotel-canaries-5.webp?updatedAt=1726511337836',
             'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Canaries/hotel-canaries-3.webp?updatedAt=1726511337852',
@@ -78,6 +81,7 @@ export const Data = [
           ],
           image: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Ibiza/hotel-ibiza-5.webp?updatedAt=1726409798616',
           pension: 'Tout compris',
+          description: "Situé à Ibiza, le Bless Hotel propose une expérience de luxe et de style, parfait pour ceux qui cherchent à se détendre tout en profitant de la vie nocturne vibrante de l'île. Un mélange parfait entre confort et élégance.",
           images: [
             'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Ibiza/hotel-ibiza-5.webp?updatedAt=1726409798616',
             'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Ibiza/hotel-ibiza-1.webp?updatedAt=1726409798598',
@@ -100,6 +104,7 @@ export const Data = [
           ],
           image: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Puerto%20Rico/hotel-puerto-2.jpg?updatedAt=1726410910812',
           pension: 'Petit-déjeuner ',
+          description: "Placé directement sur les plages de sable doré de San Juan, l'Hôtel Tres Sirenas Beach est un véritable paradis tropical. Profitez de l'océan à vos pieds, dans un cadre chaleureux et relaxant.",
           images: [
             'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Puerto%20Rico/hotel-puerto-1.jpg?updatedAt=1726410910774',
             'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Puerto%20Rico/hotel-puerto-2.jpg?updatedAt=1726410910812',      
@@ -122,6 +127,7 @@ export const Data = [
           ],
           image: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Corse/hotel-corse-3.webp?updatedAt=1726511640941',
           pension: 'Tout compris',
+          description: "Situé au cœur de la Corse, Les Regalia Hôtel & Spa vous propose une escapade raffinée avec des vues imprenables sur les montagnes et la mer. L'endroit idéal pour se ressourcer avec des services de spa de classe mondiale.",
           images: [
             'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Corse/hotel-corse-2.webp?updatedAt=1726511640926',
             'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Corse/hotel-corse-3.webp?updatedAt=1726511640941',

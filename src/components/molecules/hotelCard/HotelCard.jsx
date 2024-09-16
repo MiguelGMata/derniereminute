@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 import { FaHeart, FaStar, FaCheckCircle, FaClock, FaMapMarkerAlt, FaUtensils   } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom'; // Importa useNavigate
 import './hotelCard.css'; // Asegúrate de tener los estilos
 
 const HotelCard = ({ hotel }) => {
   const [liked, setLiked] = useState(false);
-
+  const navigate = useNavigate(); // Instancia de useNavigate
   const toggleLike = () => setLiked(!liked);
+
+  const handleDiscoverClick = () => {
+    navigate(`/sejour/${hotel.id}`); // Redirige al componente de detalles
+  };
 
   return (
     <div className="hotel-card">
@@ -40,7 +45,9 @@ const HotelCard = ({ hotel }) => {
           onClick={toggleLike}
         />
         <div className="hotel-price">{hotel.price}€</div>
-        <button className="discover-button">Découvrir</button>
+        <button className="discover-button" onClick={handleDiscoverClick}>
+          Découvrir
+        </button>
       </div>
     </div>
   );
