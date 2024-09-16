@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaHeart, FaStar, FaCheckCircle, FaClock } from 'react-icons/fa';
+import { FaHeart, FaStar, FaCheckCircle, FaClock, FaMapMarkerAlt, FaUtensils   } from 'react-icons/fa';
 import './hotelCard.css'; // Asegúrate de tener los estilos
 
 const HotelCard = ({ hotel }) => {
@@ -22,15 +22,14 @@ const HotelCard = ({ hotel }) => {
             <FaStar key={i} color={i < hotel.stars ? '#ffc107' : '#e4e5e9'} />
           ))}
         </div>
-        <p>{hotel.location}</p>
+        <p><FaMapMarkerAlt className="search-icon" />{hotel.location}</p>
         <ul className="hotel-features">
             {hotel.features.map((feature, index) => (
-            <li key={index}>{feature}</li>
+            <li key={index}>- {feature}</li>
             ))}
         </ul>
         <div className="hotel-icons">
-          <span className="all-inclusive"><FaCheckCircle className="icon" /> Tout compris</span>
-          <span className="durations"><FaClock className="icon" /> Durées Disponibles</span>
+          <span className="all-inclusive"><FaUtensils  className="search-icon"/> {hotel.pension}</span>
         </div>
       </div>
 

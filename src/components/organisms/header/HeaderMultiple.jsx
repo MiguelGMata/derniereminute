@@ -5,7 +5,7 @@ const HeaderMultiple = () => {
   return (
     <header className="header-offers">
       <div className="header-offers-text">
-    
+        <h1>Les offres de vacances ici</h1> 
       </div>
       <div className="header-offers-images">
         <img src="https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/mallorca-1.png?updatedAt=1726395884335" alt="Majorque" />

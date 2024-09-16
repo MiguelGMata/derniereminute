@@ -5,89 +5,10 @@ import 'react-datepicker/dist/react-datepicker.css';
 import { fr } from 'date-fns/locale'; // Localización en francés
 import { format } from 'date-fns'; // Formateo de fecha
 import HotelCard from './HotelCard';
+import { Data } from './Hotels';
 import './search.css';
 
-// Datos de hoteles de ejemplo
-const hotels = [
-  {
-    id: 1,
-    name: 'Hotel Majorque',
-    location: 'Majorque',
-    stars: 4,
-    price: 120,
-    features: [
-      'Un emplacement privilégié en bord de mer',
-      'Des chambres spacieuses avec un coin salon séparé, idéales pour les familles',
-      'Un hôtel moderne familial',
-    ],
-    image: 'https://via.placeholder.com/150',
-  },
-  {
-    id: 2,
-    name: 'Hotel Grèce',
-    location: 'Grèce',
-    stars: 5,
-    price: 200,
-    features: [
-      'Une vue imprenable sur la mer Égée',
-      'Des suites de luxe avec balcon privé',
-      'Un spa complet et piscine à débordement',
-    ],
-    image: 'https://via.placeholder.com/150',
-  },
-  {
-    id: 3,
-    name: 'Hotel Canaries',
-    location: 'Canaries',
-    stars: 4,
-    price: 150,
-    features: [
-      'Un accès direct à la plage',
-      'Des chambres familiales avec kitchenette',
-      'Un programme d’activités pour tous les âges',
-    ],
-    image: 'https://via.placeholder.com/150',
-  },
-  {
-    id: 4,
-    name: 'Hotel Ibiza',
-    location: 'Ibiza',
-    stars: 3,
-    price: 180,
-    features: [
-      'Situé au cœur de la vie nocturne',
-      'Des chambres avec vue sur la mer',
-      'Un rooftop avec piscine et bar',
-    ],
-    image: 'https://via.placeholder.com/150',
-  },
-  {
-    id: 5,
-    name: 'Hotel Puerto Rico',
-    location: 'Puerto Rico',
-    stars: 5,
-    price: 220,
-    features: [
-      'Un resort all inclusive',
-      'Des villas privées avec piscine',
-      'Un accès à une plage privée',
-    ],
-    image: 'https://via.placeholder.com/150',
-  },
-  {
-    id: 6,
-    name: 'Hotel Corse',
-    location: 'Corse',
-    stars: 4,
-    price: 160,
-    features: [
-      'Un cadre naturel exceptionnel',
-      'Des activités de plein air pour toute la famille',
-      'Un restaurant gastronomique avec vue panoramique',
-    ],
-    image: 'https://via.placeholder.com/150',
-  },
-];
+const hotels = Data;
 
 const Search = () => {
   const [location, setLocation] = useState('Lieu');
@@ -198,7 +119,7 @@ const Search = () => {
           )}
         </div>
         <button className="search-button" onClick={handleSearch}>
-          <FaSearch className="search-icon" />
+          <FaSearch className="search-icon icon-white" />
           Rechercher
         </button>
       </div>

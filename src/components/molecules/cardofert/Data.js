@@ -2,12 +2,12 @@
     {
       id: 1,
       images: [
-        "https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/mallorca-1.png?updatedAt=1726395884335",
         'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Majorque/hotel-majorque-1.webp?updatedAt=1726408453507',
         'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Majorque/hotel-majorque-5.webp?updatedAt=1726408716922',
         'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Majorque/hotel-majorque-3.webp?updatedAt=1726408453569',
         'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Majorque/hotel-majorque-2.webp?updatedAt=1726408453560',
-        'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Majorque/hotel-majorque-4.webp?updatedAt=1726408453563'
+        'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Majorque/hotel-majorque-4.webp?updatedAt=1726408453563',
+        "https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/mallorca-1.png?updatedAt=1726395884335",
       ],
       hotel: 'BQ Aguamarina Boutique',
       stars: 4,
@@ -18,12 +18,12 @@
     {
       id: 2,
       images: [
-        'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/santorini-1.jpg?updatedAt=1726395884168',
         'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Santorini/hotel-santorini-1.jpg?updatedAt=1726410160692',
         'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Santorini/hotel-santorini-2.jpg?updatedAt=1726410160703',
         'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Santorini/hotel-santorini-3.jpg?updatedAt=1726410160680',
         'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Santorini/hotel-santorini-4.webp?updatedAt=1726410160816',
         'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Santorini/hotel-santorini-5.webp?updatedAt=1726410160797',
+        'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/santorini-1.jpg?updatedAt=1726395884168',
       ],
       hotel: 'Astarte Suites',
       stars: 5,
@@ -35,12 +35,12 @@
     {
         id: 3,
         images: [
-            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/ibiza-1.jpg?updatedAt=1726395884215',
             'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Ibiza/hotel-ibiza-5.webp?updatedAt=1726409798616',
             'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Ibiza/hotel-ibiza-1.webp?updatedAt=1726409798598',
             'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Ibiza/hotel-ibiza-3.webp?updatedAt=1726409798489',
             'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Ibiza/hotel-ibiza-2.webp?updatedAt=1726409798350',
             'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Ibiza/hotel-ibiza-4.webp?updatedAt=1726409798651',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/ibiza-1.jpg?updatedAt=1726395884215',
         ],
         hotel: 'Bless Hotel',
         stars: 4,
@@ -51,12 +51,12 @@
       {
         id: 4,
         images: [
-          'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/puerto-rico-1.jpg?updatedAt=1726395884231',
           'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Puerto%20Rico/hotel-puerto-1.jpg?updatedAt=1726410910774',
           'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Puerto%20Rico/hotel-puerto-2.jpg?updatedAt=1726410910812',      
           'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Puerto%20Rico/hotel-puerto-3.jpg?updatedAt=1726410910771',
           'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Puerto%20Rico/hotel-puerto-4.jpg?updatedAt=1726410924196',
           'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Puerto%20Rico/hotel-puerto-5.jpg?updatedAt=1726410924246',
+          'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/puerto-rico-1.jpg?updatedAt=1726395884231',
         ],
         hotel: 'Hôtel Tres Sirenas Beach',
         stars: 3,

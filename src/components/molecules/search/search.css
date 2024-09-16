@@ -21,9 +21,11 @@
   .search-icon {
     margin-right: 8px;
     font-size: 18px;
-    color: #333;
+    color: #ef5a8d;
   }
-  
+  .icon-white{
+    color: #fff
+  }
   .search-item span {
     font-size: 16px;
   }
@@ -94,9 +96,12 @@
     background-color: #d94877;
   }
   
+@media (min-width: 768px) {
   .search-hotels-list{
     display: flex;
     justify-content:center;
     align-items:center;
     flex-direction:column;
+ 
   }
+}

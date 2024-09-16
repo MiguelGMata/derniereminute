@@ -9,13 +9,14 @@ const DestinationsScreen = () => {
     <>
     <HeaderMultiple/>
       <main className="DestinationScreen">
-        <Search/>
+
         <section className="DestinationScreen-section">
           <h1 className="DestinationScreen-heading">Nos Destinations Inoubliables</h1>
           <p className="DestinationScreen-description">
             Découvrez nos meilleures destinations à prix réduits ! !
           </p>
           <CardDestination /> 
+          <Search/>
         </section>
       </main>
     </>
