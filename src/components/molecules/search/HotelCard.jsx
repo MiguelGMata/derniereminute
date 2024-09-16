@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaHeart, FaStar, FaCheckCircle, FaClock } from 'react-icons/fa';
-import './HotelCard.css'; // Asegúrate de tener los estilos
+import './hotelCard.css'; // Asegúrate de tener los estilos
 
 const HotelCard = ({ hotel }) => {
   const [liked, setLiked] = useState(false);
