@@ -5,7 +5,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import { fr } from 'date-fns/locale'; // Localización en francés
 import { format } from 'date-fns'; // Formateo de fecha
 import HotelCard from './HotelCard';
-import './Search.css';
+import './search.css';
 
 // Datos de hoteles de ejemplo
 const hotels = [
