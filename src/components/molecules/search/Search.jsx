@@ -77,7 +77,7 @@ const Search = () => {
       <div className="search-container">
         <div className="search-item" onClick={handleLocationClick} ref={locationRef}>
           <FaMapMarkerAlt className="search-icon" />
-          <span>{location}</span>
+          <span className='search-response'>{location}</span>
           {showLocationMenu && (
             <div className="search-dropdown">
               <button onClick={() => handleLocationSelect('Majorque, Espagne')}>Majorque</button>
@@ -91,7 +91,7 @@ const Search = () => {
         </div>
         <div className="search-item" onClick={handleDateClick} ref={datePickerRef}>
           <FaCalendarAlt className="search-icon" />
-          <span>{date ? format(date, 'dd MM yyyy', { locale: fr }) : 'Date'}</span>
+          <span className='search-response'>{date ? format(date, 'dd MM yyyy', { locale: fr }) : 'Date'}</span>
           {showDatePicker && (
             <div className="date-picker-container">
               <DatePicker
@@ -107,7 +107,7 @@ const Search = () => {
         </div>
         <div className="search-item" onClick={handleNightsClick} ref={nightsRef}>
           <FaBed className="search-icon" />
-          <span>{nights}</span>
+          <span className='search-response'>{nights}</span>
           {showNightsMenu && (
             <div className="search-dropdown">
               <button onClick={() => handleNightsSelect('1 nuit')}>1 nuit</button>

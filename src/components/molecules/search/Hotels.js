@@ -12,6 +12,14 @@ export const Data = [
           ],
           image: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Majorque/hotel-majorque-1.webp?updatedAt=1726408453507',
           pension: 'Tout compris',
+          images: [
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Majorque/hotel-majorque-1.webp?updatedAt=1726408453507',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Majorque/hotel-majorque-5.webp?updatedAt=1726408716922',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Majorque/hotel-majorque-3.webp?updatedAt=1726408453569',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Majorque/hotel-majorque-2.webp?updatedAt=1726408453560',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Majorque/hotel-majorque-4.webp?updatedAt=1726408453563',
+            "https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/mallorca-1.png?updatedAt=1726395884335",
+          ],
         },
         {
           id: 2,
@@ -26,6 +34,14 @@ export const Data = [
           ],
           image: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Santorini/hotel-santorini-2.jpg?updatedAt=1726410160703',
           pension: 'Tout compris',
+          images: [
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Santorini/hotel-santorini-1.jpg?updatedAt=1726410160692',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Santorini/hotel-santorini-2.jpg?updatedAt=1726410160703',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Santorini/hotel-santorini-3.jpg?updatedAt=1726410160680',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Santorini/hotel-santorini-4.webp?updatedAt=1726410160816',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Santorini/hotel-santorini-5.webp?updatedAt=1726410160797',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/santorini-1.jpg?updatedAt=1726395884168',
+          ],
         },
         {
           id: 3,
@@ -40,6 +56,14 @@ export const Data = [
           ],
           image: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Canaries/hotel-canaries-2.webp?updatedAt=1726511279357',
           pension: 'Demi pension',
+          images: [
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Canaries/hotel-canaries-5.webp?updatedAt=1726511337836',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Canaries/hotel-canaries-3.webp?updatedAt=1726511337852',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Canaries/hotel-canaries-6.webp?updatedAt=1726511337840',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Canaries/hotel-canaries-2.webp?updatedAt=1726511279357',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Canaries/hotel-canaries-1.jpg?updatedAt=1726511337714',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Canaries/hotel-canaries-1.webp?updatedAt=1726511337788',
+          ],
         },
         {
           id: 4,
@@ -54,6 +78,14 @@ export const Data = [
           ],
           image: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Ibiza/hotel-ibiza-5.webp?updatedAt=1726409798616',
           pension: 'Tout compris',
+          images: [
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Ibiza/hotel-ibiza-5.webp?updatedAt=1726409798616',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Ibiza/hotel-ibiza-1.webp?updatedAt=1726409798598',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Ibiza/hotel-ibiza-3.webp?updatedAt=1726409798489',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Ibiza/hotel-ibiza-2.webp?updatedAt=1726409798350',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Ibiza/hotel-ibiza-4.webp?updatedAt=1726409798651',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/ibiza-1.jpg?updatedAt=1726395884215',
+        ],
         },
         {
           id: 5,
@@ -68,6 +100,14 @@ export const Data = [
           ],
           image: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Puerto%20Rico/hotel-puerto-2.jpg?updatedAt=1726410910812',
           pension: 'Petit-déjeuner ',
+          images: [
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Puerto%20Rico/hotel-puerto-1.jpg?updatedAt=1726410910774',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Puerto%20Rico/hotel-puerto-2.jpg?updatedAt=1726410910812',      
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Puerto%20Rico/hotel-puerto-3.jpg?updatedAt=1726410910771',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Puerto%20Rico/hotel-puerto-4.jpg?updatedAt=1726410924196',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Puerto%20Rico/hotel-puerto-5.jpg?updatedAt=1726410924246',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/puerto-rico-1.jpg?updatedAt=1726395884231',
+          ],
         },
         {
           id: 6,
@@ -82,5 +122,13 @@ export const Data = [
           ],
           image: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Corse/hotel-corse-3.webp?updatedAt=1726511640941',
           pension: 'Tout compris',
+          images: [
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Corse/hotel-corse-2.webp?updatedAt=1726511640926',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Corse/hotel-corse-3.webp?updatedAt=1726511640941',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Corse/hotel-corse-4.webp?updatedAt=1726511640874',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Corse/hotel-corse-5.webp?updatedAt=1726511640864',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Corse/hotel-corse-6.webp?updatedAt=1726511640901',
+            'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Corse/hotel-corse-1.webp?updatedAt=1726511640902',
+          ],
         },
       ];
