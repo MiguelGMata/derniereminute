@@ -4,11 +4,12 @@ import { FaStar, FaMapMarkerAlt } from 'react-icons/fa';
 import './hotelDetails.css';
 
 const HotelDetails = ({ hotels }) => {
+  
   const { hotelId } = useParams();
-  const hotel = hotels.find(h => h.id === parseInt(hotelId));
-
+  const hotel = [hotels].find(h => h.id === parseInt(hotelId));
+  
   if (!hotel) {
-    return <div>Hôtel non trouvé</div>;
+    return <div></div>;
   }
 
   return (

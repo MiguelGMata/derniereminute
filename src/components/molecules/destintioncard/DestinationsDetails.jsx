@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { DataDestinations } from '../destintioncard/Destinations';
 import { FaStar, FaMapMarkerAlt } from 'react-icons/fa';
 import './destinationDetails.css'; // Asegúrate de tener estilos adecuados
@@ -7,7 +7,11 @@ import './destinationDetails.css'; // Asegúrate de tener estilos adecuados
 const DestinationsDetails = () => {
   const { id } = useParams(); // Recupera el ID de la URL
   const destination = DataDestinations.find(dest => dest.id === parseInt(id)); // Encuentra la destinación por ID
-
+  const navigate = useNavigate(); // Instancia de useNavigate
+  
+  const handleDiscoverClick = (id) => {
+    navigate(`/sejour/${id}`); // Redirige al componente de detalles usando destination.id
+  };
   if (!destination) {
     return <div>Destinación no encontrada</div>;
   }
@@ -56,7 +60,7 @@ const DestinationsDetails = () => {
               </ul>
 
               {/* Botón descubrir */}
-              <button className="hotel-card-discover-button">
+              <button className="hotel-card-discover-button"  onClick={() => handleDiscoverClick(destination.id)}>
                 Découvrir
               </button>
             </div>

@@ -8,9 +8,9 @@ import DestinationsScreen from '../pages/destination/DestinationsScreen';
 import ClubsScreen from '../pages/clubs/ClubsScreen';
 import HotelCard from '../../components/molecules/hotelCard/HotelCard';
 import DestinationsDetails from '../molecules/destintioncard/DestinationsDetails';
-import { Data } from '../../components/molecules/hotelCard/Hotels'
+import { DataDestinations } from '../../components/molecules/destintioncard/Destinations';
 
-const hotels = Data;
+const hotels = DataDestinations;
 
 const AppRoutes = () => {
   return (
@@ -23,9 +23,11 @@ const AppRoutes = () => {
       <Route path="/*" element={<Error />} />
 
       <Route path="/" element={hotels.map(hotel => <HotelCard key={hotel.id} hotel={hotel} />)} />
+      
       <Route path="/sejour/:hotelId" element={<StaysScreen  hotels={hotels} />} />
 
       <Route path="/destinations/:id" element={<DestinationsDetails />} /> {/* Ruta dinámica */}
+     
     </Routes>
   );
 };

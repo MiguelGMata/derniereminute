@@ -5,10 +5,10 @@ import 'react-datepicker/dist/react-datepicker.css';
 import { fr } from 'date-fns/locale'; // Localización en francés
 import { format } from 'date-fns'; // Formateo de fecha
 import HotelCard from '../hotelCard/HotelCard';
-import { Data } from '../hotelCard/Hotels';
+import {  DataDestinations} from '../destintioncard/Destinations';
 import './search.css';
 
-const hotels = Data;
+const hotels = DataDestinations;
 
 const Search = () => {
   const [location, setLocation] = useState('Lieu');
@@ -67,11 +67,10 @@ const Search = () => {
     if (location === 'Lieu') {
       setFilteredHotels(hotels); // Si no se selecciona ubicación, muestra todos los hoteles
     } else {
-      const filtered = hotels.filter((hotel) => hotel.location === location);
+      const filtered = hotels.filter((hotel) => hotel.country === location);
       setFilteredHotels(filtered);
     }
   };
-
   return (
     <div>
       <div className="search-container">
@@ -80,12 +79,12 @@ const Search = () => {
           <span className='search-response'>{location}</span>
           {showLocationMenu && (
             <div className="search-dropdown">
-              <button onClick={() => handleLocationSelect('Majorque, Espagne')}>Majorque</button>
-              <button onClick={() => handleLocationSelect('Santorin, Grèce')}>Santorin</button>
-              <button onClick={() => handleLocationSelect('Îles Canaries, Espagne')}>Îles Canaries</button>
-              <button onClick={() => handleLocationSelect('Ibiza, Espagne')}>Ibiza</button>
-              <button onClick={() => handleLocationSelect('San Juan, Porto Rico')}>Porto Rico</button>
-              <button onClick={() => handleLocationSelect('Corse, France')}>Corse</button>
+              <button onClick={() => handleLocationSelect('Espagne')}>Espagne</button>
+              <button onClick={() => handleLocationSelect('France')}>France</button>
+              <button onClick={() => handleLocationSelect('Grèce')}>Grèce</button>
+              <button onClick={() => handleLocationSelect('Maroc')}>Maroc</button>
+              <button onClick={() => handleLocationSelect('Porto Rico')}>Porto Rico</button>
+              <button onClick={() => handleLocationSelect('Venezuela')}>Venezuela</button>
             </div>
           )}
         </div>
@@ -126,7 +125,20 @@ const Search = () => {
 
       <div className="search-hotels-list">
         {filteredHotels.length > 0 ? (
-          filteredHotels.map((hotel) => <HotelCard key={hotel.id} hotel={hotel} />)
+          filteredHotels.map((hotelFilter) => (
+            <div key={hotelFilter.id}>
+              {/* Segundo map dentro de hotelFilter sobre destinations */}
+              {hotelFilter.destinations && hotelFilter.destinations.length > 0 ? (
+                <ul>
+                  {hotelFilter.destinations.map((hotel, index) => (
+                    <HotelCard key={hotel.id} hotel={hotel} />
+                  ))}
+                </ul>
+              ) : (
+                <p>No destinations available</p>
+              )}
+            </div>
+          ))
         ) : (
           <p>Aucun hôtel disponible pour cette destination.</p>
         )}
@@ -136,3 +148,10 @@ const Search = () => {
 };
 
 export default Search;
+/**   <div className="search-hotels-list">
+        {filteredHotels.length > 0 ? (
+          filteredHotels.map((hotel) => <HotelCard key={hotel.id} hotel={hotel} />)
+        ) : (
+          <p>Aucun hôtel disponible pour cette destination.</p>
+        )}
+      </div> */

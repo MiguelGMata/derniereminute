@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaHeart, FaStar, FaCheckCircle, FaClock, FaMapMarkerAlt, FaUtensils   } from 'react-icons/fa';
+import { FaHeart, FaStar, FaMapMarkerAlt, FaUtensils   } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom'; // Importa useNavigate
 import './hotelCard.css'; // Asegúrate de tener los estilos
 

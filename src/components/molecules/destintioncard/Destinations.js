@@ -89,7 +89,7 @@ export const DataDestinations = [
       description: 'La France est réputée pour son romantisme, son art, et sa gastronomie. Des paysages variés comme la Côte d\'Azur, la Provence, et les Alpes en font une destination de choix, sans oublier Paris, la ville lumière.',
       destinations: [
         {
-            id: 1,
+            id: 4,
             name: 'Les Regalia Hôtel & Spa',
             country: 'France',
             location: 'Corse, France',
@@ -122,7 +122,7 @@ export const DataDestinations = [
       description: 'La Grèce, berceau de la civilisation occidentale, est connue pour ses îles paradisiaques telles que Santorin et Mykonos, ainsi que ses monuments historiques comme l\'Acropole à Athènes.',
       destinations: [
         {
-            id: 1,
+            id: 5,
             name: 'Astarte Suites',
             country: 'Grèce',
             location: 'Santorin, Grèce',
@@ -155,7 +155,7 @@ export const DataDestinations = [
       description: 'Porto Rico offre un mélange unique de culture caribéenne et espagnole. Avec ses plages magnifiques, sa forêt tropicale d\'El Yunque et la vibrante ville de San Juan, c\'est une destination idéale pour se détendre et explorer.',
       destinations: [
         {
-            id: 1,
+            id: 6,
             name: 'Hôtel Tres Sirenas Beach',
             country: 'Porto Rico',
             location: 'San Juan, Porto Rico',
@@ -188,7 +188,7 @@ export const DataDestinations = [
       description: 'Le Maroc est une destination riche en culture, avec des paysages variés allant des plages dorées aux montagnes impressionnantes. Les villes comme Marrakech, Fès et Casablanca offrent un mélange fascinant de traditions anciennes et de modernité.',
       destinations: [
         {
-          id: 1,
+          id: 7,
           name: "Dunes d'Or Ocean Club",
           country: 'Maroc',
           location: 'Agadir, Maroc',
@@ -221,7 +221,7 @@ export const DataDestinations = [
       description: 'Le Venezuela est un pays riche en paysages divers, allant des plages paradisiaques des Caraïbes aux vastes plaines de l’Orénoque. Connue pour sa biodiversité impressionnante, ses parcs nationaux et ses villes vibrantes, la destination idéale pour les amoureux de la nature et de la culture.',
       destinations: [
         {
-          id: 1,
+          id: 8,
           name: 'Hotel Los Roques Paradise',
           country: 'Venezuela',
           location: 'Archipel de Los Roques, Venezuela',
@@ -246,7 +246,7 @@ export const DataDestinations = [
           ],
         },
         {
-          id: 1,
+          id: 9,
           name: 'Hotel Margarita Tropical',
           country: 'Venezuela',
           location: 'Île Margarita, Venezuela',

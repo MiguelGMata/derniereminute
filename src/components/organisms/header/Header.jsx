@@ -11,10 +11,6 @@ const Header = () => {
         </div>
         <div className="header-content">
           <h1>Les offres de vacances en dernière minute, c'est ici</h1> 
-          <div className="search-bar">
-            <input type="text" placeholder="Rechercher..." />
-            <button type="button">Rechercher</button>
-          </div>
         </div>
       </header>
 
