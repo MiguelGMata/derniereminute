@@ -2,7 +2,9 @@ export const Data = [
         {
           id: 1,
           name: 'Hotel BQ Aguamarina Boutique',
+          country: 'Espagne',
           location: 'Majorque, Espagne',
+          locationImage: "https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/mallorca-1.png?updatedAt=1726395884335",
           stars: 4,
           price: 204,
           features: [
@@ -25,7 +27,9 @@ export const Data = [
         {
           id: 2,
           name: 'Astarte Suites',
+          country: 'Grèce',
           location: 'Santorin, Grèce',
+          locationImage: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/santorini-1.jpg?updatedAt=1726395884168',
           stars: 5,
           price: 180,
           features: [
@@ -48,7 +52,9 @@ export const Data = [
         {
           id: 3,
           name: 'Hotel Santa Catalina,',
+          country: 'Espagne',
           location: 'Îles Canaries, Espagne',
+          locationImage: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/gran-canaria-1.jpg?updatedAt=1726395884235',
           stars: 3,
           price: 150,
           features: [
@@ -72,6 +78,8 @@ export const Data = [
           id: 4,
           name: 'Bless Hotel',
           location: 'Ibiza, Espagne',
+          country: 'Espagne',
+          locationImage: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/gran-canaria-1.jpg?updatedAt=1726395884235',
           stars: 4,
           price: 265,
           features: [
@@ -89,12 +97,14 @@ export const Data = [
             'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Ibiza/hotel-ibiza-2.webp?updatedAt=1726409798350',
             'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/Ibiza/hotel-ibiza-4.webp?updatedAt=1726409798651',
             'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/ibiza-1.jpg?updatedAt=1726395884215',
-        ],
+          ],
         },
         {
           id: 5,
           name: 'Hôtel Tres Sirenas Beach',
+          country: 'Porto Rico',
           location: 'San Juan, Porto Rico',
+          locationImage: "https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/puerto-rico-1.jpg?updatedAt=1726395884231",
           stars: 3,
           price: 120,
           features: [
@@ -117,7 +127,9 @@ export const Data = [
         {
           id: 6,
           name: 'Les Regalia Hôtel & Spa',
+          country: 'France',
           location: 'Corse, France',
+          locationImage: "https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/corse-1.jpg?updatedAt=1726420022963",
           stars: 4,
           price: 419,
           features: [

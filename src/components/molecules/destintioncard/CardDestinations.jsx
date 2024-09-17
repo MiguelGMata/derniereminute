@@ -1,23 +1,29 @@
 import React from 'react';
+import {  DataDestinations} from '../destintioncard/Destinations';
+import { useNavigate } from 'react-router-dom'; // Importa useNavigate
 import './cardDestinations.css';
 
-const destinations = [
-  { id: 1, title: 'Majorque', imageUrl: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/mallorca-1.png?updatedAt=1726395884335' },
-  { id: 2, title: 'Santorin', imageUrl: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/santorini-1.jpg?updatedAt=1726395884168' },
-  { id: 3, title: 'Ibiza', imageUrl: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/ibiza-1.jpg?updatedAt=1726395884215' },
-  { id: 4, title: 'Îles Canaries', imageUrl: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/gran-canaria-1.jpg?updatedAt=1726395884235' },
-  { id: 5, title: 'Porto Rico', imageUrl: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/puerto-rico-1.jpg?updatedAt=1726395884231' },
-  { id: 6, title: 'Corse', imageUrl: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/corse-1.jpg?updatedAt=1726420022963' }
-];
+const destinations = DataDestinations;
 
 const CardDestinations = () => {
+  const navigate = useNavigate(); // Instancia de useNavigate
+  
+  const handleDiscoverClick = (id) => {
+    navigate(`/destinations/${id}`); // Redirige al componente de detalles usando destination.id
+  };
+
   return (
     <div className="card-destinations-grid">
       {destinations.map((destination) => (
         <div key={destination.id} className="destination-card">
-          <img src={destination.imageUrl} alt={destination.title} className="destination-image" />
-          <div className="destination-title">{destination.title}</div>
-          <div className="destination-btn">Découvrir</div>
+          <img src={destination.locationImage} alt={destination.title} className="destination-image" />
+          <div className="destination-title">{destination.country}</div>
+          <div 
+            className="destination-btn" 
+            onClick={() => handleDiscoverClick(destination.id)} // Pasa la función correctamente
+          >
+            Découvrir
+          </div>
         </div>
       ))}
     </div>
@@ -25,3 +31,4 @@ const CardDestinations = () => {
 };
 
 export default CardDestinations;
+
