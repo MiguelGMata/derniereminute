@@ -40,9 +40,9 @@ const Carousel = () => {
   };
 
   return (
-    <div className='projet-block'>
+    <div className='custom-projet-block'>
       <div className='custom-gallery-wrapper'>
-        <ImageGallery
+      <ImageGallery
           items={images}
           renderItem={renderItem} // Personaliza el renderizado de las imágenes
           showPlayButton={false}

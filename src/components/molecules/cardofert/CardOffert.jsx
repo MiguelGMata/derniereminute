@@ -37,7 +37,7 @@ const CardOffert = () => {
   };
 
   // Limitar la cantidad de hoteles mostrados a 8
-  const limitedOffers = offers.slice(0, 4);
+  const limitedOffers = offers.slice(0, 8);
 
   return (
     <div className="card-offert-container">

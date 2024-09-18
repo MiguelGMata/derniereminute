@@ -1,0 +1,33 @@
+/* Estilo general para el contenedor principal de la pantalla de ofertas */
+.search-screen {
+    background-color: #fff;
+    min-height: 100vh; 
+  }
+  
+  /* Estilo para la sección dentro del contenedor principal */
+  .search-screen-section {
+    width: 100%;
+    margin: 0 auto; 
+    padding: 0px; 
+  }
+  
+  /* Estilo para el encabezado principal */
+  .search-screen-heading {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #ef5a8d;
+    text-align: center; 
+  }
+  
+  /* Estilo para la descripción */
+  .search-screen-description {
+    font-size: 1.5em; 
+    margin-bottom: 30px;
+    color: #000; 
+    text-align: center; 
+  }
+  
+  /* Estilo responsivo para pantallas pequeñas */
+  @media (min-width: 768px) {
+
+  }

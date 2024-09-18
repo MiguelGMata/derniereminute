@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaHome, FaHotel, FaUmbrellaBeach, FaTags, FaMapPin } from 'react-icons/fa';
+import { FaHome, FaSearch , FaUmbrellaBeach, FaTags, FaMapPin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Image from '../../../assets/images/logo.png';
 
@@ -33,6 +33,14 @@ const Navbar = () => {
           >
             <Link to={"/"} className='navbar-link'>
               <FaHome /> <span>Accueil</span>
+            </Link>
+          </li>
+          <li 
+            className={activeItem === 'Rechercher' ? 'active' : ''} 
+            onClick={() => handleMenuItemClick('Rechercher')}
+          >
+            <Link to={"/rechercher"} className='navbar-link'>
+              <FaSearch /> <span>Rechercher</span>
             </Link>
           </li>
           <li 
@@ -70,15 +78,3 @@ const Navbar = () => {
 
 export default Navbar;
 
-
-/**
- * 
- *       <li 
-            className={activeItem === 'Séjours' ? 'active' : ''} 
-            onClick={() => handleMenuItemClick('Séjours')}
-          >
-            <Link to={"/sejours"} className='navbar-link'>
-              <FaHotel /> <span>Séjours</span>
-            </Link>
-          </li>
- */

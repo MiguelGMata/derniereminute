@@ -1,23 +1,21 @@
-.projet-block{
+.custom-projet-block{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;   
+    width: 100%; ;   
 }
 
 .custom-gallery-wrapper{
-    width: 100%;
+    width: 100% ; 
 }
 .custom-gallery-wrapper img {
-    width: 100%; 
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Evita espacios en blanco debajo de la imagen */           
-    object-fit: cover;
+    width: 100vw !important; ; 
+    height: 50vh !important; ; 
+    display: block !important; ; /* Evita espacios en blanco debajo de la imagen */           
+    object-fit: cover !important; ;
 }
 
 @media (min-width: 768px){
-    .projet-block h1 {
-        font-size: 3rem;
-    }   
+ 
 }

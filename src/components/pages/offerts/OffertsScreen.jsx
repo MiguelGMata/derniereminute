@@ -1,7 +1,6 @@
 import React from 'react';
 import CardOffert from '../../molecules/cardofert/CardOffert'; 
 import HeaderMultiple from '../../organisms/header/HeaderMultiple';
-import Search from '../../molecules/search/Search';
 import './offertsScreen.css';
 
 
@@ -16,7 +15,6 @@ const OffertsScreen = () => {
             Découvrez nos meilleures offres de vacances à prix réduits !
           </p>
           <CardOffert /> 
-          <Search/>
         </section>
       </main>
     </>
