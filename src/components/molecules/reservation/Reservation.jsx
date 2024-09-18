@@ -45,7 +45,7 @@ const Reservation = () => {
         <h2 className="reservation-title">{hotel.name}</h2>
         <p className="hotel-location">{hotel.location}</p>
         <img src={hotel.image} alt={hotel.name} className="hotel-image" />
-        <p className="hotel-price">Prix : {hotel.price}€ par nuit</p>
+        <p className="hotel-price">Prix : {hotel.price}€ <span className="price-note">par nuit</span></p>
       </div>
 
       <div className="reservation-container">

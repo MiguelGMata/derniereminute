@@ -51,6 +51,8 @@
   border-radius: 8px;
   padding: 1rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color:#ef5a8d;
 }
 
 .card img {
