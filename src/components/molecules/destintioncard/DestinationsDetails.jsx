@@ -45,7 +45,7 @@ const DestinationsDetails = () => {
               <img src={hotel.image} alt={hotel.name} className="hotel-card-image" />
 
               {/* Precio y estrellas */}
-              <p className="hotel-card-price"><strong>Prix:</strong> {hotel.price}€</p>
+              <p className="hotel-card-price"><strong>Prix:</strong> {hotel.price}€ <span className="price-note">par nuit</span> </p>
               <div className="hotel-card-stars">
                 {[...Array(5)].map((_, i) => (
                   <FaStar key={i} color={i < hotel.stars ? '#ffc107' : '#e4e5e9'} className="hotel-star-icon" />

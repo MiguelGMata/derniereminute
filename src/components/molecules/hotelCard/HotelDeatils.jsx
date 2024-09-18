@@ -1,10 +1,13 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; // Importa useNavigate
 import { FaStar, FaMapMarkerAlt } from 'react-icons/fa';
 import { DataDestinations } from '../destintioncard/Destinations';
 import './hotelDetails.css';
 
 const HotelDetails = () => {
+  const navigate = useNavigate(); // Instancia de useNavigate
+
   const hotels = DataDestinations.flatMap(country => country.destinations); /**aplanará todos los arrays de destinos en un solo array de hoteles. */
   hotels.forEach(hotel => hotel); /**Este es solo para depuración, imprime cada hotel en la consola. */
 
@@ -14,6 +17,9 @@ const HotelDetails = () => {
   if (!hotel) {
     return <div></div>;
   }
+  const handleClick = (hotel) => {
+    navigate(`/reservation`, { state: { hotel } });
+  };
 
   return (
     <div className="hotel-details">
@@ -37,7 +43,9 @@ const HotelDetails = () => {
           <FaStar key={i} color={i < hotel.stars ? '#ffc107' : '#e4e5e9'} />
         ))}
       </div>
-
+      <button className="discover-button"onClick={() => handleClick(hotel)}> 
+          Réservation
+        </button>
       <div className="hotel-description-card">
         <p>Description : {hotel.description}</p>
       </div>
