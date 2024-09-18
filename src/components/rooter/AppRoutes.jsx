@@ -7,6 +7,8 @@ import OffertsScreen from '../pages/offerts/OffertsScreen';
 import DestinationsScreen from '../pages/destination/DestinationsScreen';
 import ClubsScreen from '../pages/clubs/ClubsScreen';
 import DestinationsDetails from '../molecules/destintioncard/DestinationsDetails';
+import ContactsScreen from '../pages/contact/ContactScreen';
+
 
 const AppRoutes = () => {
   return (
@@ -17,6 +19,7 @@ const AppRoutes = () => {
       <Route path="/destinations" element={<DestinationsScreen />} />
       <Route path="destinations/sejour/:hotelId" element={<StaysScreen />} />
       <Route path="/destinations/:id" element={<DestinationsDetails />} />
+      <Route path='/contact' element={<ContactsScreen />} />
       <Route path="/*" element={<Error />} />
     </Routes>
   );

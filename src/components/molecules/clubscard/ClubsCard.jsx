@@ -29,7 +29,7 @@ const ClubsCard = () => {
                         </div>
                         <p className="club-location"><FaMapMarkerAlt className="club-location-icon" /> {club.location}</p>
                         <p className="club-description">{club.description}</p>
-                        <h3 className='club-price'>{club.price}€</h3>
+                        <h3 className='club-price'><span className="price-note">Dès</span> {club.price}€</h3>
                     </div>
                     <div className="div-button">
                         <button  onClick={() => handleClick(club.id)} className="discover-button">Découvrir</button>

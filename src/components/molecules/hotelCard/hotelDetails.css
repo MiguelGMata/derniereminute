@@ -87,6 +87,10 @@
     text-align: center;
     margin-bottom: 15px;
   }
+  .price-note{
+    color: #333;
+    font-size: 14px;
+  }
   
   /* Descripción del hotel */
   .hotel-description-card {

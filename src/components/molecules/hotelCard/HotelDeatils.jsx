@@ -31,7 +31,7 @@ const HotelDetails = () => {
       </div>
 
       {/* Precio y Estrellas */}
-      <p className="hotel-price">Prix : {hotel.price}€</p>
+      <p className="hotel-price">Prix : {hotel.price}€ <span className="price-note">par nuit</span></p>
       <div className="hotel-stars">
         {[...Array(5)].map((_, i) => (
           <FaStar key={i} color={i < hotel.stars ? '#ffc107' : '#e4e5e9'} />

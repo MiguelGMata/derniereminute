@@ -13,17 +13,17 @@ const Footer = () => {
           <div className="footer-column">
           <h3>Contactez-nous</h3>
             <ul>
-              <li><a href="#about"><FaMapMarkerAlt/>56 rue Sadi Carno, Paris 75020</a></li>
-              <li><a href="#careers"><FaEnvelope /> contact@voyagesagence.com</a></li>
-              <li><a href="#terms"><FaPhoneAlt /> +33 1 23 45 67 89</a></li>
+              <li><a href="#about"><FaMapMarkerAlt/>56 rue Sadi Carnot, Paris 75020</a></li>
+              <li><a href="#careers"><FaEnvelope /> contact@dierniereminute.com</a></li>
+              <li><a href="#terms"><FaPhoneAlt /> +33 6 56 82 29 46 </a></li>
             </ul>
           </div>
           <div className="footer-column">
             <h3>Aide</h3>
             <ul>
-              <li><a href="#support">Service client</a></li>
+              <li><a href="/contact">Service client</a></li>
               <li><a href="#faq">FAQ</a></li>
-              <li><a href="#contact">Contactez-nous</a></li>
+              <li><a href="/contact">Contactez-nous</a></li>
             </ul>
           </div>
           <div className="footer-column">

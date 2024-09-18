@@ -72,7 +72,7 @@ const CardOffert = () => {
                 ))}
             </div>
             <p>{offer.description}</p>
-            <div className="price">{offer.price}€</div>
+            <div className="price"><span className="price-note">Dès</span> {offer.price}€</div>
             <button className="hotel-card-discover-button" onClick={() => handleClick(offer.id)}>Découvrir</button>
           </div>
         </div>

@@ -45,7 +45,7 @@ const HotelCard = ({ hotel }) => {
           className={`heart-icon ${liked ? 'liked' : ''}`}
           onClick={toggleLike}
         />
-        <div className="hotel-price">{hotel.price}€</div>
+        <div className="hotel-price"> <span className="price-note">Dès</span> {hotel.price}€</div>
         <button className="discover-button" onClick={handleDiscoverClick}>
           Découvrir
         </button>

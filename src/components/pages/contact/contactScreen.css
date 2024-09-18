@@ -1,0 +1,33 @@
+/* contactScreen.css */
+
+/* Estilos generales para el contenedor principal */
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  
+  /* Estilos para las secciones de contacto */
+  .contact-form {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    text-align: center;
+    font-size: 1.5rem
+  }
+  
+  @media (min-width: 768px) {
+    .contact-info,
+    .contact-form {
+      margin: 40px auto;
+      padding: 40px;
+      width: 50%;
+    }
+  
+  }
+  
