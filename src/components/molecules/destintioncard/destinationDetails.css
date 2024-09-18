@@ -32,7 +32,11 @@
 
 /* Gallery section */
 .hotels-gallery-wrapper {
-  margin-top: 30px;
+ display: flex;
+ align-items: center;
+ justify-content: center; 
+ flex-direction: column;
+ width: 100%;
 }
 
 .hotel-card-wrapper {
@@ -116,10 +120,12 @@
 @media (min-width: 768px) {
   .hotels-gallery-wrapper {
     display: flex;
+    flex-direction: row;
     gap: 20px;
   }
-  
+
   .hotel-card-wrapper {
-    width: calc(50% - 20px); /* Ajusta el ancho según sea necesario */
+    width: calc(50% - 500px); /* Ajusta el ancho según sea necesario */
+    height: 70vh; /* Ajusta el ancho según sea necesario */
   }
 }
