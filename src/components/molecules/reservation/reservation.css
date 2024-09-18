@@ -69,6 +69,9 @@
   .reservation-button:hover {
     background-color: #c03f6b;
   }
+  .total-price{
+    color: #f00;
+  }
   
   /* For tablets */
   @media (min-width: 768px) {

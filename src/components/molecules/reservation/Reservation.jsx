@@ -76,7 +76,7 @@ const Reservation = () => {
           onChange={handleGuestsChange}
           className="reservation-input"
         />
-          <p className="total-price">Total à payer : {total}€</p>
+          <h2 className="total-price">Total à payer : {total}€</h2>
         <button className="reservation-button" onClick={handleReservation}>
           Payer
         </button>
