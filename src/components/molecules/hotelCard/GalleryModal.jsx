@@ -17,10 +17,10 @@ const GalleryModal = ({ images, isOpen, onClose }) => {
   return (
     <div className="gallery-modal">
       <div className="gallery-modal-content">
-        <span className="close" onClick={onClose}>&times;</span>
-        <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="modal-image" />
-        <button className="prev" onClick={handlePrev}>❮</button>
-        <button className="next" onClick={handleNext}>❯</button>
+        <span className="gallery-close" onClick={onClose}>&times;</span>
+        <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="gallery-modal-image" />
+        <button className="gallery-prev" onClick={handlePrev}>❮</button>
+        <button className="gallery-next" onClick={handleNext}>❯</button>
       </div>
     </div>
   );

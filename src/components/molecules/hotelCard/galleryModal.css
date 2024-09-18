@@ -18,13 +18,13 @@
     max-width: 800px;
   }
   
-  .modal-image {
+  .gallery-modal-image {
     width: 100%;
     height: 50vh;
     border-radius: 10px;
   }
   
-  .close {
+  .gallery-close {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -33,7 +33,7 @@
     cursor: pointer;
   }
   
-  .prev, .next {
+  .gallery-prev, .gallery-next {
     position: absolute;
     top: 50%;
     font-size: 36px;
@@ -45,11 +45,11 @@
     border-radius: 50%;
   }
   
-  .prev {
+  .gallery-prev {
     left: 10px;
   }
   
-  .next {
+  .gallery-next {
     right: 10px;
   }
   
