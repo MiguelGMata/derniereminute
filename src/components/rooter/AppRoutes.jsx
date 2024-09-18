@@ -6,28 +6,18 @@ import StaysScreen from '../pages/stays/StaysScreen';
 import OffertsScreen from '../pages/offerts/OffertsScreen';
 import DestinationsScreen from '../pages/destination/DestinationsScreen';
 import ClubsScreen from '../pages/clubs/ClubsScreen';
-import HotelCard from '../../components/molecules/hotelCard/HotelCard';
 import DestinationsDetails from '../molecules/destintioncard/DestinationsDetails';
-import { DataDestinations } from '../../components/molecules/destintioncard/Destinations';
-
-const hotels = DataDestinations;
 
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<HomeScreen />} />
-
       <Route path="/clubs" element={<ClubsScreen />} />
       <Route path="/bons-plans" element={<OffertsScreen />} />
       <Route path="/destinations" element={<DestinationsScreen />} />
+      <Route path="destinations/sejour/:hotelId" element={<StaysScreen />} />
+      <Route path="/destinations/:id" element={<DestinationsDetails />} />
       <Route path="/*" element={<Error />} />
-
-      <Route path="/" element={hotels.map(hotel => <HotelCard key={hotel.id} hotel={hotel} />)} />
-      
-      <Route path="/sejour/:hotelId" element={<StaysScreen  hotels={hotels} />} />
-
-      <Route path="/destinations/:id" element={<DestinationsDetails />} /> {/* Ruta dinámica */}
-     
     </Routes>
   );
 };

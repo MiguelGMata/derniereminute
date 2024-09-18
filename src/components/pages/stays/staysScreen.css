@@ -6,6 +6,7 @@
   
   /* Estilo para la sección dentro del contenedor principal */
   .StaysScreen-section {
+    width: 100%;
     margin: 0 auto; 
     padding: 0px; 
   }
@@ -26,7 +27,6 @@
     text-align: center; 
   }
   
- 
   /* Estilo responsivo para pantallas pequeñas */
   @media (min-width: 768px) {
 

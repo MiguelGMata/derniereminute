@@ -1,13 +1,16 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { FaStar, FaMapMarkerAlt } from 'react-icons/fa';
+import { DataDestinations } from '../destintioncard/Destinations';
 import './hotelDetails.css';
 
-const HotelDetails = ({ hotels }) => {
-  
-  const { hotelId } = useParams();
-  const hotel = [hotels].find(h => h.id === parseInt(hotelId));
-  
+const HotelDetails = () => {
+  const hotels = DataDestinations.flatMap(country => country.destinations); /**aplanará todos los arrays de destinos en un solo array de hoteles. */
+  hotels.forEach(hotel => hotel); /**Este es solo para depuración, imprime cada hotel en la consola. */
+
+  const { hotelId } = useParams();/**Obtienes el hotelId de los parámetros de la URL. */
+  const hotel = hotels.find(h => h.id === parseInt(hotelId)); /**Una vez que tienes todos los hoteles en un solo array, buscas el hotel que tenga el id que coincide con hotelId. */
+
   if (!hotel) {
     return <div></div>;
   }

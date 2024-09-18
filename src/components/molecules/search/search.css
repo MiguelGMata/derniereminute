@@ -1,7 +1,10 @@
+.search{
+  padding: 10px;
+}
 .search-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #f4f4f4;
     border-radius: 8px;
     padding: 10px;
@@ -95,15 +98,8 @@
   .search-button:hover {
     background-color: #d94877;
   }
-
-@media (min-width: 768px) {
-  .search-hotels-list{
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
- 
-  }
+.search-hotels-list{
+  padding: 1%;
 }
 
 @media (max-width: 767px) {
@@ -111,6 +107,6 @@
     display: none;
   }
   .search-dropdown {
-    width: 150px;
+    width: 200px;
   }
 }

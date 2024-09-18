@@ -1,20 +1,15 @@
 import React from 'react';
 import HeaderStays from '../../organisms/header/HeaderStays';
-
-import './staysScreen.css';
 import HotelDetails from '../../molecules/hotelCard/HotelDeatils';
+import './staysScreen.css';
 
-const StaysScreen = ({hotels} ) => {
+const StaysScreen = () => {
   return (
     <>
     <HeaderStays/>
       <main className="StaysScreen">
-          <section className="StaysScreen-section">
-          {hotels.map((country) => (
-          country.destinations.map((destination) => (
-            <HotelDetails key={destination.id} hotels={destination} />
-          ))
-          ))}
+        <section className="StaysScreen-section">
+          <HotelDetails />
         </section>
       </main>
     </>

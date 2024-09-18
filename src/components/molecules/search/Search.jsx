@@ -72,7 +72,7 @@ const Search = () => {
     }
   };
   return (
-    <div>
+    <div className='search'>
       <div className="search-container">
         <div className="search-item" onClick={handleLocationClick} ref={locationRef}>
           <FaMapMarkerAlt className="search-icon" />
@@ -124,34 +124,29 @@ const Search = () => {
       </div>
 
       <div className="search-hotels-list">
-        {filteredHotels.length > 0 ? (
-          filteredHotels.map((hotelFilter) => (
-            <div key={hotelFilter.id}>
-              {/* Segundo map dentro de hotelFilter sobre destinations */}
-              {hotelFilter.destinations && hotelFilter.destinations.length > 0 ? (
-                <ul>
-                  {hotelFilter.destinations.map((hotel, index) => (
-                    <HotelCard key={hotel.id} hotel={hotel} />
-                  ))}
-                </ul>
-              ) : (
-                <p>No destinations available</p>
-              )}
-            </div>
-          ))
-        ) : (
-          <p>Aucun hôtel disponible pour cette destination.</p>
-        )}
+
+            {filteredHotels.length > 0 ? (
+            filteredHotels.map((hotelFilter) => (
+              <div key={hotelFilter.id}>
+                {/* Segundo map dentro de hotelFilter sobre destinations */}
+                {hotelFilter.destinations && hotelFilter.destinations.length > 0 ? (
+                  <div>
+                    {hotelFilter.destinations.map((hotel, index) => (
+                      <HotelCard key={hotel.id} hotel={hotel} />
+                    ))}
+                  </div>
+                ) : (
+                  <p>No destinations available</p>
+                )}
+              </div>
+            ))
+            ) : (
+              <p>Aucun hôtel disponible pour cette destination.</p>
+            )}
+   
       </div>
     </div>
   );
 };
 
 export default Search;
-/**   <div className="search-hotels-list">
-        {filteredHotels.length > 0 ? (
-          filteredHotels.map((hotel) => <HotelCard key={hotel.id} hotel={hotel} />)
-        ) : (
-          <p>Aucun hôtel disponible pour cette destination.</p>
-        )}
-      </div> */

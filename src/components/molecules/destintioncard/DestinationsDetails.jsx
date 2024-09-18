@@ -10,7 +10,7 @@ const DestinationsDetails = () => {
   const navigate = useNavigate(); // Instancia de useNavigate
   
   const handleDiscoverClick = (id) => {
-    navigate(`/sejour/${id}`); // Redirige al componente de detalles usando destination.id
+    navigate(`/destinations/sejour/${id}`); // Redirige al componente de detalles usando destination.id
   };
   if (!destination) {
     return <div>Destinación no encontrada</div>;
@@ -60,7 +60,7 @@ const DestinationsDetails = () => {
               </ul>
 
               {/* Botón descubrir */}
-              <button className="hotel-card-discover-button"  onClick={() => handleDiscoverClick(destination.id)}>
+              <button className="hotel-card-discover-button"  onClick={() => handleDiscoverClick(hotel.id)}>
                 Découvrir
               </button>
             </div>

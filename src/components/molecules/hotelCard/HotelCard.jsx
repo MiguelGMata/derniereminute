@@ -9,11 +9,12 @@ const HotelCard = ({ hotel }) => {
   const toggleLike = () => setLiked(!liked);
 
   const handleDiscoverClick = () => {
-    navigate(`/sejour/${hotel.id}`); // Redirige al componente de detalles
+    navigate(`/destinations/sejour/${hotel.id}`); // Redirige al componente de detalles
   };
 
   return (
-    <div className="hotel-card">
+   <div className="hotel-container">
+     <div className="hotel-card">
       {/* Primera columna - Imagen */}
       <div className="hotel-image">
         <img src={hotel.image} alt={hotel.name} />
@@ -50,6 +51,7 @@ const HotelCard = ({ hotel }) => {
         </button>
       </div>
     </div>
+   </div>
   );
 };
 

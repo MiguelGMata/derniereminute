@@ -1,13 +1,19 @@
 /* CSS para HotelCard - Mobile-First */
 
+.hotel-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;        
+}
 .hotel-card {
   display: flex;
   flex-direction: column;
   padding: 15px;
+  margin: 0;  /* Para asegurarte de que el margen no afecte el layout */
   border: 1px solid rgba(246, 214, 214, 0.8);
-  margin: 10px;
   border-radius: 8px;
   box-shadow: 0 5px 5px rgba(255, 210, 210, 0.8);
+  width: 100%;
 }
 
 .hotel-image {
