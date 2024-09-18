@@ -1,179 +1,204 @@
 /* Contenedor principal */
 .hotel-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    margin: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Título del hotel */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del hotel */
+.hotel-details h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #d94e7c; /* Color del título */
+  text-align: center;
+  margin: 0px;
+}
+
+/* Imagen principal */
+.hotel-details .main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Galería de imágenes */
+.div-image-gallery {
+  width: 100%;
+  overflow-x: auto; /* Permite desplazamiento horizontal */
+  overflow-y: hidden; /* Oculta desplazamiento vertical */
+  white-space: nowrap; /* Mantiene el contenido en una sola línea */
+  scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+  -ms-overflow-style: none; /* Oculta la barra de desplazamiento en Internet Explorer 10+ */
+}
+
+.div-image-gallery::-webkit-scrollbar {
+  display: none; /* Oculta la barra de desplazamiento en Webkit (Chrome, Safari) */
+}
+
+.image-gallery {
+  list-style-type: none; /* Quitar los puntos de la lista */
+  padding: 0;
+  margin: 0;
+  display: inline-flex; /* Utiliza flexbox para alinear horizontalmente */
+  justify-content: flex-start; /* Alinea las imágenes a la izquierda */
+}
+
+.hotel-features {
+  display: inline-block; /* Permite que los elementos se alineen en una fila */
+  margin-right: 10px; /* Espacio entre las imágenes */
+}
+
+.hotel-features img {
+  display: block; /* Quita el espacio adicional debajo de las imágenes */
+  width: 200px; /* Ajusta el ancho de las imágenes según sea necesario */
+  height: 150px; /* Ajusta la altura de las imágenes según sea necesario */
+  object-fit: cover; /* Asegura que las imágenes mantengan su proporción */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estrellas */
+.hotel-stars {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.hotel-stars svg {
+  margin-right: 5px;
+  color: #ffc107; /* Color de las estrellas */
+  font-size: 20px;
+}
+
+/* Lista de características del hotel */
+.hotel-features {
+  list-style-type: none; /* Quitar los puntos de la lista */
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.hotel-features li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+  margin-left: 0; /* Elimina el margen izquierdo que estaba causando problemas */
+}
+
+/* Precio del hotel */
+.hotel-details .hotel-price {
+  font-size: 28px;
+  font-weight: bold;
+  color: #d94e7c; /* Color del precio */
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.price-note {
+  color: #333;
+  font-size: 14px;
+}
+
+/* Descripción del hotel */
+.hotel-description-card {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo transparente */
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.hotel-description-card p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Estilos responsivos */
+
+/* Dispositivos móviles (mobile-first) */
+@media (max-width: 480px) {
   .hotel-details h2 {
-    font-size: 26px;
-    font-weight: bold;
-    color: #d94e7c; /* Color del título */
-    text-align: center;
-    margin: 0px;
+    font-size: 22px;
   }
-  
-  /* Imagen principal */
-  .hotel-details .main-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Galería de imágenes */
-  .div-image-gallery{
-    width: 100%;
-    padding: 0;
-    margin-left: -30px;
-  }
+
   .hotel-details .image-gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 5px;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  /* Estilo para las imágenes de la galería */
-  .hotel-details .image-gallery img {
-    width: 80%;
-    background-color: #d94e7c;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px; 
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    grid-template-columns: 1fr; /* Una columna en móviles */
   }
 
-  /* Estrellas */
-  .hotel-stars {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-  
-  .hotel-stars svg {
-    margin-right: 5px;
-    color: #ffc107; /* Color de las estrellas */
-    font-size: 20px;
-  }
-  
-  /* Lista de características del hotel */
-  .hotel-features {
-    list-style-type: none; /* Quitar los puntos de la lista */
-    padding: 0;
-    margin-bottom: 20px;
-  }
-
-  .hotel-features li {
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #555;
-    margin-left: -20px;
-  }
-  
-  /* Precio del hotel */
   .hotel-details .hotel-price {
-    font-size: 28px;
-    font-weight: bold;
-    color: #d94e7c; /* Color del precio */
-    text-align: center;
-    margin-bottom: 15px;
+    font-size: 24px;
   }
-  .price-note{
-    color: #333;
-    font-size: 14px;
+
+  .hotel-details .main-image {
+    height: 250px; /* Ajustar la imagen principal */
   }
-  
-  /* Descripción del hotel */
-  .hotel-description-card {
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo transparente */
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+}
+
+/* Tablets (ancho entre 481px y 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .hotel-details h2 {
+    font-size: 24px;
   }
-  
-  .hotel-description-card p {
-    font-size: 16px;
-    color: #333;
-    line-height: 1.6;
-    text-align: center;
+
+  .hotel-details .image-gallery {
+    grid-template-columns: 1fr 1fr; /* Dos columnas en tablets */
+    grid-gap: 15px;
   }
-  
-  /* Estilos responsivos */
-  
-  /* Dispositivos móviles (mobile-first) */
-  @media (max-width: 480px) {
-    .hotel-details h2 {
-      font-size: 22px;
-    }
-    
-  
-    .hotel-details .image-gallery {
-      grid-template-columns: 1fr; /* Una columna en móviles */
-    }
-  
-    .hotel-details .hotel-price {
-      font-size: 24px;
-    }
-  
-    .hotel-details .main-image {
-      height: 250px; /* Ajustar la imagen principal */
-    }
+
+  .hotel-details .hotel-price {
+    font-size: 26px;
   }
-  
-  /* Tablets (ancho entre 481px y 768px) */
-  @media (min-width: 481px) and (max-width: 768px) {
-    .hotel-details h2 {
-      font-size: 24px;
-    }
-  
-    .hotel-details .image-gallery {
-      grid-template-columns: 1fr 1fr; /* Dos columnas en tablets */
-      grid-gap: 15px;
-    }
-  
-    .hotel-details .hotel-price {
-      font-size: 26px;
-    }
-  
-    .hotel-details .main-image {
-      height: 300px;
-    }
+
+  .hotel-details .main-image {
+    height: 300px;
   }
-  
-  /* Escritorio (ancho mayor a 768px) */
-  @media (min-width: 769px) {
-    .hotel-details {
-      max-width: 1200px;
-      margin: 10px auto;
-      padding: 30px;
-    }
-  
-    .hotel-details h2 {
-      font-size: 30px;
-    }
-  
-    .hotel-details .main-image {
-      max-width: 800px;
-      height: 450px;
-    }
-  
-    .hotel-details .image-gallery {
-      grid-template-columns: repeat(3, 1fr); /* Tres columnas en escritorio */
-      grid-gap: 20px;
-    }
-  
-    .hotel-details .hotel-price {
-      font-size: 30px;
-    }
+}
+.view-photos-button{
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid transparent;
+  padding: 10px 10px;
+  font-size: 1rem;
+  color: #555;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-photos-button:hover {
+  background-color: #eabfce87;
+  color: white;
+}
+/* Escritorio (ancho mayor a 768px) */
+@media (min-width: 769px) {
+  .hotel-details {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 30px;
   }
-  
+
+  .hotel-details h2 {
+    font-size: 30px;
+  }
+
+  .hotel-details .main-image {
+    max-width: 800px;
+    height: 450px;
+  }
+
+  .hotel-details .image-gallery {
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas en escritorio */
+    grid-gap: 20px;
+  }
+
+  .hotel-details .hotel-price {
+    font-size: 30px;
+  }
+}
