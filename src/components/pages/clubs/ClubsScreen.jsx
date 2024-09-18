@@ -1,6 +1,8 @@
 import React from 'react';
 import HeaderClubs from '../../organisms/header/HeaderClubs';
+import ClubsCard from '../../molecules/clubscard/ClubsCard';
 import './clubsScreen.css';
+
 
 
 const ClubsScreen = () => {
@@ -13,7 +15,7 @@ const ClubsScreen = () => {
           <p className="ClubsScreen-description">
             Des séjours tout compris pour toute la famille, dans des lieux de rêve avec des activités pour tous les goûts.
           </p>
-        
+          <ClubsCard/>
         </section>
       </main>
     </>

@@ -11,6 +11,7 @@ export const DataDestinations = [
             country: 'Espagne',
             location: 'Majorque, Espagne',
             locationImage: "https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/mallorca-1.png?updatedAt=1726395884335",
+            type:"Hotel",
             stars: 4,
             price: 204,
             features: [
@@ -32,10 +33,11 @@ export const DataDestinations = [
         },
         {
             id: 2,
-            name: 'Hotel Santa Catalina',
+            name: 'Hôtel & Club Santa Catalina',
             country: 'Espagne',
             location: 'Îles Canaries, Espagne',
             locationImage: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/gran-canaria-1.jpg?updatedAt=1726395884235',
+            type:"Club",
             stars: 3,
             price: 150,
             features: [
@@ -61,6 +63,7 @@ export const DataDestinations = [
             location: 'Ibiza, Espagne',
             country: 'Espagne',
             locationImage: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/gran-canaria-1.jpg?updatedAt=1726395884235',
+            type:"Hotel",
             stars: 4,
             price: 265,
             features: [
@@ -90,10 +93,11 @@ export const DataDestinations = [
       destinations: [
         {
             id: 4,
-            name: 'Les Regalia Hôtel & Spa',
+            name: 'Les Regalia Hôtel & Club',
             country: 'France',
             location: 'Corse, France',
             locationImage: "https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/corse-1.jpg?updatedAt=1726420022963",
+            type:"Club",
             stars: 4,
             price: 419,
             features: [
@@ -127,6 +131,7 @@ export const DataDestinations = [
             country: 'Grèce',
             location: 'Santorin, Grèce',
             locationImage: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/santorini-1.jpg?updatedAt=1726395884168',
+            type:"Hotel",
             stars: 5,
             price: 180,
             features: [
@@ -160,6 +165,7 @@ export const DataDestinations = [
             country: 'Porto Rico',
             location: 'San Juan, Porto Rico',
             locationImage: "https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/puerto-rico-1.jpg?updatedAt=1726395884231",
+            type:"Hotel",
             stars: 3,
             price: 120,
             features: [
@@ -193,6 +199,7 @@ export const DataDestinations = [
           country: 'Maroc',
           location: 'Agadir, Maroc',
           locationImage: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/maroc-1.jpg?updatedAt=1726582135476',
+          type:"Hotel",
           stars: 4,
           price: 120,
           features: [
@@ -226,6 +233,7 @@ export const DataDestinations = [
           country: 'Venezuela',
           location: 'Archipel de Los Roques, Venezuela',
           locationImage: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/venezuela-1.jpg?updatedAt=1726582329478',
+          type:"Hotel",
           stars: 4,
           price: 250,
           features: [
@@ -247,10 +255,11 @@ export const DataDestinations = [
         },
         {
           id: 9,
-          name: 'Hotel Margarita Tropical',
+          name: 'Hôtel & Club Margarita Tropical',
           country: 'Venezuela',
           location: 'Île Margarita, Venezuela',
           locationImage: 'https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/ile-margarita-1.jpg?updatedAt=1726582456789',
+          type:"Club",
           stars: 4,
           price: 180,
           features: [

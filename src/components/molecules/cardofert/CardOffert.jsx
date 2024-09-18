@@ -7,6 +7,7 @@ import './cardOffert.css';
 const CardOffert = () => {
   const [currentIndexes, setCurrentIndexes] = useState({});
   const navigate = useNavigate(); // Instancia de useNavigate
+  
   // Aplanar el array de destinos en un solo array de hoteles
   const Destinations = DataDestinations.flatMap((hotels) => hotels.destinations);
   const offers = Destinations;
@@ -66,10 +67,8 @@ const CardOffert = () => {
           <div className="card-info">
             <h3>{offer.name}</h3>
             <div className="stars">
-              {Array(offer.stars)
-                .fill()
-                .map((_, i) => (
-                  <FaStar key={i} className="star-icon" />
+                {[...Array(5)].map((_, i) => (
+                            <FaStar key={i} color={i < offer.stars ? '#ffc107' : '#e4e5e9'} />
                 ))}
             </div>
             <p>{offer.description}</p>

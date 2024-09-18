@@ -1,0 +1,83 @@
+/* Estilos base para pantallas móviles */
+.clubs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  
+  .club-card {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    width: 100%;
+  }
+  
+  .club-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .club-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .club-info {
+    padding: 15px;
+  }
+  
+  .club-name {
+    color: #ef5a8d;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .club-location {
+    font-size: 1em;
+    color: #ef5a8d;
+    margin-bottom: 10px;
+  }
+  
+  .club-description {
+    font-size: 0.9em;
+    color: #555;
+  }
+
+  .club-price {
+    font-size: 1.5em;
+    color: #ef5a8d;
+  }
+  .div-button {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+
+  /* Media queries para pantallas más grandes (tablets) */
+  @media (min-width: 768px) {
+    .clubs-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+  
+    .club-card {
+      width: calc(50% - 20px); /* Mostrar dos tarjetas por fila */
+    }
+  }
+  
+  /* Media queries para pantallas grandes (desktops) */
+  @media (min-width: 1024px) {
+    .club-card {
+      width: calc(33.33% - 20px); /* Mostrar tres tarjetas por fila */
+    }
+  }
+  
+ 
