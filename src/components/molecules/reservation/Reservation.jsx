@@ -37,7 +37,7 @@ const Reservation = () => {
   if (!hotel) {
     return <div>Erreur: pas de détails d'hôtel disponibles</div>;
   }
-
+  const total = hotel.price * nights;
   return (
     <div className="reservation">
       <div className="reservation-container">
@@ -76,7 +76,7 @@ const Reservation = () => {
           onChange={handleGuestsChange}
           className="reservation-input"
         />
-
+          <p className="total-price">Total à payer : {total}€</p>
         <button className="reservation-button" onClick={handleReservation}>
           Payer
         </button>

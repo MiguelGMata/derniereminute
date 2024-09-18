@@ -6,23 +6,23 @@ import './carousel.css';
 const images = [
   {
     original: "https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/mallorca-1.png?updatedAt=1726395884335",
-    link: "https://www.fr.lastminute.com/"
+    link: "https://derniereminute.vercel.app/destinations/1"
   },
   {
     original: "https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/santorini-1.jpg?updatedAt=1726395884168",
-    link: "https://www.fr.lastminute.com/"
+    link: "https://derniereminute.vercel.app/destinations/2"
   },
   {
     original: "https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/ibiza-1.jpg?updatedAt=1726395884215",
-    link: "https://www.fr.lastminute.com/"
+    link: "https://derniereminute.vercel.app/destinations/3"
   },
   {
     original: "https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/gran-canaria-1.jpg?updatedAt=1726395884235",
-    link: "https://www.fr.lastminute.com/"
+    link: "https://derniereminute.vercel.app/destinations/4"
   },
   {
     original: "https://ik.imagekit.io/logoMGM/Derni%C3%A8reMinute/puerto-rico-1.jpg?updatedAt=1726395884231",
-    link: "https://www.fr.lastminute.com/"
+    link: "https://derniereminute.vercel.app/destinations/5"
   },
 ];
 
