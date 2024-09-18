@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import './Reservation.css';
+import './reservation.css';
 
 const Reservation = () => {
   const location = useLocation(); //usa useLocation para obtener la data:
