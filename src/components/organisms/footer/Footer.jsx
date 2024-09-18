@@ -29,10 +29,9 @@ const Footer = () => {
           <div className="footer-column">
             <h3>Destinations populaires</h3>
             <ul>
-              <li><a href="#paris">Majorque</a></li>
-              <li><a href="#london">Santorini</a></li>
-              <li><a href="#bali">Ibiza</a></li>
-              <li><a href="#ny">Puerto Rico</a></li>
+              <li><a href="/destinations">Grèce</a></li>
+              <li><a href="/destinations">Puerto Rico</a></li>
+              <li><a href="/destinations">Venezuela</a></li>
             </ul>
           </div>
         </div>
