@@ -62,6 +62,7 @@
   object-fit: cover; /* Asegura que las imágenes mantengan su proporción */
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 5px;
 }
 
 /* Estrellas */
