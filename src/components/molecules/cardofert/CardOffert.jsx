@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import { FaArrowLeft, FaArrowRight, FaStar, FaMapMarkerAlt } from 'react-icons/fa';
-import { Data } from './Data';
+import { DataDestinations } from '../destintioncard/Destinations';
+import { useNavigate } from 'react-router-dom'; // Importa useNavigate
 import './cardOffert.css';
 
 const CardOffert = () => {
   const [currentIndexes, setCurrentIndexes] = useState({});
-  const offers = Data
+  const navigate = useNavigate(); // Instancia de useNavigate
+  // Aplanar el array de destinos en un solo array de hoteles
+  const Destinations = DataDestinations.flatMap((hotels) => hotels.destinations);
+  const offers = Destinations;
 
   const handlePrevClick = (offerId) => {
     setCurrentIndexes((prevIndexes) => {
@@ -27,9 +31,16 @@ const CardOffert = () => {
     });
   };
 
+  const handleClick = (id) => {
+    navigate(`/destinations/sejour/${id}`); 
+  };
+
+  // Limitar la cantidad de hoteles mostrados a 8
+  const limitedOffers = offers.slice(0, 4);
+
   return (
     <div className="card-offert-container">
-      {offers.map((offer) => (
+      {limitedOffers.map((offer) => (
         <div key={offer.id} className="card-offert">
           <div className="carousel">
             <button
@@ -53,7 +64,7 @@ const CardOffert = () => {
             </button>
           </div>
           <div className="card-info">
-            <h3>{offer.hotel}</h3>
+            <h3>{offer.name}</h3>
             <div className="stars">
               {Array(offer.stars)
                 .fill()
@@ -62,7 +73,8 @@ const CardOffert = () => {
                 ))}
             </div>
             <p>{offer.description}</p>
-            <div className="price">{offer.price}</div>
+            <div className="price">{offer.price}€</div>
+            <button className="hotel-card-discover-button" onClick={() => handleClick(offer.id)}>Découvrir</button>
           </div>
         </div>
       ))}

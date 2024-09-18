@@ -1,6 +1,6 @@
 import React from 'react';
-import {  DataDestinations} from '../destintioncard/Destinations';
 import { useNavigate } from 'react-router-dom'; // Importa useNavigate
+import {  DataDestinations} from '../destintioncard/Destinations';
 import './cardDestinations.css';
 
 const destinations = DataDestinations;
