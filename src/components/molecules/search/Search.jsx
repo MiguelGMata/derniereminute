@@ -124,7 +124,6 @@ const Search = () => {
       </div>
 
       <div className="search-hotels-list">
-
             {filteredHotels.length > 0 ? (
             filteredHotels.map((hotelFilter) => (
               <div key={hotelFilter.id}>
@@ -143,7 +142,6 @@ const Search = () => {
             ) : (
               <p>Aucun hôtel disponible pour cette destination.</p>
             )}
-   
       </div>
     </div>
   );
