@@ -3,11 +3,10 @@ import Header from '../../organisms/header/Header';
 import CardOffert from '../../molecules/cardofert/CardOffert';
 import SeparatorA from '../../atoms/separator/SeparatorA';
 import SeparatorB from '../../atoms/separator/SeparatorB';
-import './homeScreen.css';
 import CardDestinations from '../../molecules/destintioncard/CardDestinations';
 import ClubsCard from '../../molecules/clubscard/ClubsCard';
 import SeparatorC from '../../atoms/separator/SeparatorC';
-
+import './homeScreen.css';
 
 
 const HomeScreen = () =>{
